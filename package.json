@@ -1,11 +1,11 @@
 {
-  "name": "sanitize-html",
+  "name": "@quizizz/sanitize-html",
   "version": "1.27.1",
   "description": "Clean up user-submitted HTML, preserving whitelisted elements and whitelisted attributes on a per-element basis",
   "sideEffects": false,
-  "main": "dist/sanitize-html.js",
+  "main": "src/index.js",
   "files": [
-    "dist/"
+    "src/"
   ],
   "scripts": {
     "build": "mkdir -p dist && browserify src/index.js > dist/sanitize-html-es2015.js --standalone 'sanitizeHtml' && babel dist/sanitize-html-es2015.js --out-file dist/sanitize-html.js --presets=@babel/preset-env",
@@ -15,7 +15,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/apostrophecms/sanitize-html.git"
+    "url": "https://github.com/quizizz/sanitize-html.git"
   },
   "keywords": [
     "html",
